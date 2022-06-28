@@ -293,7 +293,7 @@
     </div>
 </header>
         
-        <main class="page page-home">
+       <main class="page page-home">
             <section class="page__main-block main-block">
                 <div class="main-block__container _container">
                     <div class="main-block__body">
@@ -536,44 +536,1326 @@
                 </div>
             </section>
             <section class="page__hits-products hits-products">
-                @@include('html/products-slider.html', {
-                    "title": "Хиты продаж",
-                    "moretext": "Перейти в каталог"
-                })
+                <section class="products-slider">
+                    <div class="products-slider__container _container">
+                        <div class="products-slider__header">
+                            <h2 class="products-slider__title">Хиты продаж</h2>
+                            <a href="" class="products-slider__more _icon-arrow-bottom">Перейти в каталог</a>
+                        </div>
+                        <!-- Sliders -->
+                        <div class="products-slider__second second-slider">
+                            <div class="second-slider__body products-slider__body _swiper">
+                                <div class="second-slider__slide slide-second">
+                                    <article class="product-card">
+                                        <a href="" class="product-card__image">
+                                            <span class="product-card__item-image _ibg">
+                                                <img src="../img/knife-fox.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div class="product-card__body">
+                                            <h4 class="product-card__title">
+                                                <a href="" class="product-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="product-card__info info-product-card">
+                                                <div class="info-product-card__size">95х18</div>
+                                                <div class="info-product-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="product-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="product-card__price">2 719 р.</div>
+                                                <a href="" class="product-card__compare _icon-compare"></a>
+                                                <a href="" class="product-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="product-card__cart _btn">
+                                                <span>В корзину</span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                    <title>cart</title>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    </svg>   
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="second-slider__slide slide-second">
+                                    <article class="product-card">
+                                        <a href="" class="product-card__image">
+                                            <span class="product-card__item-image _ibg">
+                                                <img src="../img/knife-fox.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div class="product-card__body">
+                                            <h4 class="product-card__title">
+                                                <a href="" class="product-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="product-card__info info-product-card">
+                                                <div class="info-product-card__size">95х18</div>
+                                                <div class="info-product-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="product-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="product-card__price">2 719 р.</div>
+                                                <a href="" class="product-card__compare _icon-compare"></a>
+                                                <a href="" class="product-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="product-card__cart _btn">
+                                                <span>В корзину</span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                    <title>cart</title>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    </svg>   
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="second-slider__slide slide-second">
+                                    <article class="product-card">
+                                        <a href="" class="product-card__image">
+                                            <span class="product-card__item-image _ibg">
+                                                <img src="../img/knife-fox.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div class="product-card__body">
+                                            <h4 class="product-card__title">
+                                                <a href="" class="product-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="product-card__info info-product-card">
+                                                <div class="info-product-card__size">95х18</div>
+                                                <div class="info-product-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="product-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="product-card__price">2 719 р.</div>
+                                                <a href="" class="product-card__compare _icon-compare"></a>
+                                                <a href="" class="product-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="product-card__cart _btn">
+                                                <span>В корзину</span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                    <title>cart</title>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    </svg>   
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="second-slider__slide slide-second">
+                                    <article class="product-card">
+                                        <a href="" class="product-card__image">
+                                            <span class="product-card__item-image _ibg">
+                                                <img src="../img/knife-fox.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div class="product-card__body">
+                                            <h4 class="product-card__title">
+                                                <a href="" class="product-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="product-card__info info-product-card">
+                                                <div class="info-product-card__size">95х18</div>
+                                                <div class="info-product-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="product-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="product-card__price">2 719 р.</div>
+                                                <a href="" class="product-card__compare _icon-compare"></a>
+                                                <a href="" class="product-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="product-card__cart _btn">
+                                                <span>В корзину</span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                    <title>cart</title>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    </svg>   
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="second-slider__dotts _dotts"></div>
+                        </div>
+                    </div>
+                </section>
             </section>
             <section class="page__new-products new-products">
-                @@include('html/products-new.html', {
-                    "title": "Новинки"
-                })
+                <section class="products-new">
+                    <div class="products-new__inner">
+                        <div class="products-new__container _container">
+                            <div class="products-new__body">
+                                <h2 class="products-new__title">Новинки</h2>
+                                <div class="products-new__text">
+                                    Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине представлен наиболее широкий выбор Златоустовских ножей от
+                                    Златоустовских Оружейных Фабрик и компаний, мы являемся официальными поставщиками.
+                                </div>
+                                <a href="" class="products-new__link _icon-arrow-bottom">Больше новинок</a>
+                            </div>
+                            <div class="products-new__content">
+                                <div class="products-new__slider third-slider">
+                                    <div class="third-slider__body _swiper">
+                                        <div class="third-slider__slide slide-third">
+                                            <article class="product-card">
+                                                <a href="" class="product-card__image">
+                                                    <span class="product-card__item-image _ibg">
+                                                        <img src="../img/knife-fox.jpg" alt="">
+                                                    </span>
+                                                </a>
+                                                <div class="product-card__body">
+                                                    <h4 class="product-card__title">
+                                                        <a href="" class="product-card__link-title">Нож Лиса</a>
+                                                    </h4>
+                                                    <div class="product-card__info info-product-card">
+                                                        <div class="info-product-card__size">95х18</div>
+                                                        <div class="info-product-card__materials">Орех, Алюминий</div>
+                                                    </div>
+                                                    <div class="product-card__rating rating rating_set">
+                                                        <div class="rating__body">
+                                                            <div class="rating__active"></div>
+                                                            <div class="rating__items">
+                                                                <input type="radio" name="rating" class="rating__item" value="1">
+                                                                <input type="radio" name="rating" class="rating__item" value="2">
+                                                                <input type="radio" name="rating" class="rating__item" value="3">
+                                                                <input type="radio" name="rating" class="rating__item" value="4">
+                                                                <input type="radio" name="rating" class="rating__item" value="5">
+                                                            </div>
+                                                        </div>
+                                                        <div class="rating__value">3.6</div>
+                                                        <div class="rating__info">12 отзывов</div>
+                                                    </div>
+                                                    <div class="product-card__footer">
+                                                        <div class="product-card__price">2 719 р.</div>
+                                                        <a href="" class="product-card__compare _icon-compare"></a>
+                                                        <a href="" class="product-card__favorite _icon-favorite"></a>
+                                                    </div>
+                                                    <button type="button" class="product-card__cart _btn">
+                                                        <span>В корзину</span>
+                                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                            <title>cart</title>
+                                                            <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                            <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                            <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                            </svg>
+                                                    </button>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="third-slider__slide slide-third">
+                                            <article class="product-card">
+                                                <a href="" class="product-card__image">
+                                                    <span class="product-card__item-image _ibg">
+                                                        <img src="../img/knife-fox.jpg" alt="">
+                                                    </span>
+                                                </a>
+                                                <div class="product-card__body">
+                                                    <h4 class="product-card__title">
+                                                        <a href="" class="product-card__link-title">Нож Лиса</a>
+                                                    </h4>
+                                                    <div class="product-card__info info-product-card">
+                                                        <div class="info-product-card__size">95х18</div>
+                                                        <div class="info-product-card__materials">Орех, Алюминий</div>
+                                                    </div>
+                                                    <div class="product-card__rating rating rating_set">
+                                                        <div class="rating__body">
+                                                            <div class="rating__active"></div>
+                                                            <div class="rating__items">
+                                                                <input type="radio" name="rating" class="rating__item" value="1">
+                                                                <input type="radio" name="rating" class="rating__item" value="2">
+                                                                <input type="radio" name="rating" class="rating__item" value="3">
+                                                                <input type="radio" name="rating" class="rating__item" value="4">
+                                                                <input type="radio" name="rating" class="rating__item" value="5">
+                                                            </div>
+                                                        </div>
+                                                        <div class="rating__value">3.6</div>
+                                                        <div class="rating__info">12 отзывов</div>
+                                                    </div>
+                                                    <div class="product-card__footer">
+                                                        <div class="product-card__price">2 719 р.</div>
+                                                        <a href="" class="product-card__compare _icon-compare"></a>
+                                                        <a href="" class="product-card__favorite _icon-favorite"></a>
+                                                    </div>
+                                                    <button type="button" class="product-card__cart _btn">
+                                                        <span>В корзину</span>
+                                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                            <title>cart</title>
+                                                            <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                            <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                            <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                            </svg>
+                                                    </button>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="third-slider__slide slide-third">
+                                            <article class="product-card">
+                                                <a href="" class="product-card__image">
+                                                    <span class="product-card__item-image _ibg">
+                                                        <img src="../img/knife-fox.jpg" alt="">
+                                                    </span>
+                                                </a>
+                                                <div class="product-card__body">
+                                                    <h4 class="product-card__title">
+                                                        <a href="" class="product-card__link-title">Нож Лиса</a>
+                                                    </h4>
+                                                    <div class="product-card__info info-product-card">
+                                                        <div class="info-product-card__size">95х18</div>
+                                                        <div class="info-product-card__materials">Орех, Алюминий</div>
+                                                    </div>
+                                                    <div class="product-card__rating rating rating_set">
+                                                        <div class="rating__body">
+                                                            <div class="rating__active"></div>
+                                                            <div class="rating__items">
+                                                                <input type="radio" name="rating" class="rating__item" value="1">
+                                                                <input type="radio" name="rating" class="rating__item" value="2">
+                                                                <input type="radio" name="rating" class="rating__item" value="3">
+                                                                <input type="radio" name="rating" class="rating__item" value="4">
+                                                                <input type="radio" name="rating" class="rating__item" value="5">
+                                                            </div>
+                                                        </div>
+                                                        <div class="rating__value">3.6</div>
+                                                        <div class="rating__info">12 отзывов</div>
+                                                    </div>
+                                                    <div class="product-card__footer">
+                                                        <div class="product-card__price">2 719 р.</div>
+                                                        <a href="" class="product-card__compare _icon-compare"></a>
+                                                        <a href="" class="product-card__favorite _icon-favorite"></a>
+                                                    </div>
+                                                    <button type="button" class="product-card__cart _btn">
+                                                        <span>В корзину</span>
+                                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                            <title>cart</title>
+                                                            <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                            <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                            <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                            </svg>
+                                                    </button>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="third-slider__dotts _dotts"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </section>
             <section class="page__sale-products sale-products sale-products_no-bottom">
-                @@include('html/products-slider.html', {
-                    "title": "Акции",
-                    "moretext": "Все акции"
-                })
+                <section class="products-slider">
+                    <div class="products-slider__container _container">
+                        <div class="products-slider__header">
+                            <h2 class="products-slider__title">Акции</h2>
+                            <a href="" class="products-slider__more _icon-arrow-bottom">Все акции</a>
+                        </div>
+                        <!-- Sliders -->
+                        <div class="products-slider__second second-slider">
+                            <div class="second-slider__body products-slider__body _swiper">
+                                <div class="second-slider__slide slide-second">
+                                    <article class="product-card">
+                                        <a href="" class="product-card__image">
+                                            <span class="product-card__item-image _ibg">
+                                                <img src="../img/knife-fox.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div class="product-card__body">
+                                            <h4 class="product-card__title">
+                                                <a href="" class="product-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="product-card__info info-product-card">
+                                                <div class="info-product-card__size">95х18</div>
+                                                <div class="info-product-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="product-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="product-card__price">2 719 р.</div>
+                                                <a href="" class="product-card__compare _icon-compare"></a>
+                                                <a href="" class="product-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="product-card__cart _btn">
+                                                <span>В корзину</span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                    <title>cart</title>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    </svg>   
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="second-slider__slide slide-second">
+                                    <article class="product-card">
+                                        <a href="" class="product-card__image">
+                                            <span class="product-card__item-image _ibg">
+                                                <img src="../img/knife-fox.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div class="product-card__body">
+                                            <h4 class="product-card__title">
+                                                <a href="" class="product-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="product-card__info info-product-card">
+                                                <div class="info-product-card__size">95х18</div>
+                                                <div class="info-product-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="product-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="product-card__price">2 719 р.</div>
+                                                <a href="" class="product-card__compare _icon-compare"></a>
+                                                <a href="" class="product-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="product-card__cart _btn">
+                                                <span>В корзину</span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                    <title>cart</title>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    </svg>   
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="second-slider__slide slide-second">
+                                    <article class="product-card">
+                                        <a href="" class="product-card__image">
+                                            <span class="product-card__item-image _ibg">
+                                                <img src="../img/knife-fox.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div class="product-card__body">
+                                            <h4 class="product-card__title">
+                                                <a href="" class="product-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="product-card__info info-product-card">
+                                                <div class="info-product-card__size">95х18</div>
+                                                <div class="info-product-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="product-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="product-card__price">2 719 р.</div>
+                                                <a href="" class="product-card__compare _icon-compare"></a>
+                                                <a href="" class="product-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="product-card__cart _btn">
+                                                <span>В корзину</span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                    <title>cart</title>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    </svg>   
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="second-slider__slide slide-second">
+                                    <article class="product-card">
+                                        <a href="" class="product-card__image">
+                                            <span class="product-card__item-image _ibg">
+                                                <img src="../img/knife-fox.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div class="product-card__body">
+                                            <h4 class="product-card__title">
+                                                <a href="" class="product-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="product-card__info info-product-card">
+                                                <div class="info-product-card__size">95х18</div>
+                                                <div class="info-product-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="product-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="product-card__price">2 719 р.</div>
+                                                <a href="" class="product-card__compare _icon-compare"></a>
+                                                <a href="" class="product-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="product-card__cart _btn">
+                                                <span>В корзину</span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                    <title>cart</title>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    </svg>   
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="second-slider__dotts _dotts"></div>
+                        </div>
+                    </div>
+                </section>
             </section>
             <section class="page__sale-products sale-products">
-                @@include('html/products-slider.html', {
-                    "title": "Акции",
-                    "moretext": "Все акции"
-                })
+                <section class="products-slider">
+                    <div class="products-slider__container _container">
+                        <div class="products-slider__header">
+                            <h2 class="products-slider__title">Акции</h2>
+                            <a href="" class="products-slider__more _icon-arrow-bottom">Все акции</a>
+                        </div>
+                        <!-- Sliders -->
+                        <div class="products-slider__second second-slider">
+                            <div class="second-slider__body products-slider__body _swiper">
+                                <div class="second-slider__slide slide-second">
+                                    <article class="product-card">
+                                        <a href="" class="product-card__image">
+                                            <span class="product-card__item-image _ibg">
+                                                <img src="../img/knife-fox.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div class="product-card__body">
+                                            <h4 class="product-card__title">
+                                                <a href="" class="product-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="product-card__info info-product-card">
+                                                <div class="info-product-card__size">95х18</div>
+                                                <div class="info-product-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="product-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="product-card__price">2 719 р.</div>
+                                                <a href="" class="product-card__compare _icon-compare"></a>
+                                                <a href="" class="product-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="product-card__cart _btn">
+                                                <span>В корзину</span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                    <title>cart</title>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    </svg>   
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="second-slider__slide slide-second">
+                                    <article class="product-card">
+                                        <a href="" class="product-card__image">
+                                            <span class="product-card__item-image _ibg">
+                                                <img src="../img/knife-fox.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div class="product-card__body">
+                                            <h4 class="product-card__title">
+                                                <a href="" class="product-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="product-card__info info-product-card">
+                                                <div class="info-product-card__size">95х18</div>
+                                                <div class="info-product-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="product-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="product-card__price">2 719 р.</div>
+                                                <a href="" class="product-card__compare _icon-compare"></a>
+                                                <a href="" class="product-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="product-card__cart _btn">
+                                                <span>В корзину</span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                    <title>cart</title>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    </svg>   
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="second-slider__slide slide-second">
+                                    <article class="product-card">
+                                        <a href="" class="product-card__image">
+                                            <span class="product-card__item-image _ibg">
+                                                <img src="../img/knife-fox.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div class="product-card__body">
+                                            <h4 class="product-card__title">
+                                                <a href="" class="product-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="product-card__info info-product-card">
+                                                <div class="info-product-card__size">95х18</div>
+                                                <div class="info-product-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="product-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="product-card__price">2 719 р.</div>
+                                                <a href="" class="product-card__compare _icon-compare"></a>
+                                                <a href="" class="product-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="product-card__cart _btn">
+                                                <span>В корзину</span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                    <title>cart</title>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    </svg>   
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="second-slider__slide slide-second">
+                                    <article class="product-card">
+                                        <a href="" class="product-card__image">
+                                            <span class="product-card__item-image _ibg">
+                                                <img src="../img/knife-fox.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div class="product-card__body">
+                                            <h4 class="product-card__title">
+                                                <a href="" class="product-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="product-card__info info-product-card">
+                                                <div class="info-product-card__size">95х18</div>
+                                                <div class="info-product-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="product-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="product-card__price">2 719 р.</div>
+                                                <a href="" class="product-card__compare _icon-compare"></a>
+                                                <a href="" class="product-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="product-card__cart _btn">
+                                                <span>В корзину</span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                    <title>cart</title>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    </svg>   
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="second-slider__dotts _dotts"></div>
+                        </div>
+                    </div>
+                </section>
             </section>
             <section class="page__new-products new-products">
-                @@include('html/products-new.html', {
-                    "title": "Новинки"
-                })
+                <section class="products-new">
+                    <div class="products-new__inner">
+                        <div class="products-new__container _container">
+                            <div class="products-new__body">
+                                <h2 class="products-new__title">Новинки</h2>
+                                <div class="products-new__text">
+                                    Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине представлен наиболее широкий выбор Златоустовских ножей от
+                                    Златоустовских Оружейных Фабрик и компаний, мы являемся официальными поставщиками.
+                                </div>
+                                <a href="" class="products-new__link _icon-arrow-bottom">Больше новинок</a>
+                            </div>
+                            <div class="products-new__content">
+                                <div class="products-new__slider third-slider">
+                                    <div class="third-slider__body _swiper">
+                                        <div class="third-slider__slide slide-third">
+                                            <article class="product-card">
+                                                <a href="" class="product-card__image">
+                                                    <span class="product-card__item-image _ibg">
+                                                        <img src="../img/knife-fox.jpg" alt="">
+                                                    </span>
+                                                </a>
+                                                <div class="product-card__body">
+                                                    <h4 class="product-card__title">
+                                                        <a href="" class="product-card__link-title">Нож Лиса</a>
+                                                    </h4>
+                                                    <div class="product-card__info info-product-card">
+                                                        <div class="info-product-card__size">95х18</div>
+                                                        <div class="info-product-card__materials">Орех, Алюминий</div>
+                                                    </div>
+                                                    <div class="product-card__rating rating rating_set">
+                                                        <div class="rating__body">
+                                                            <div class="rating__active"></div>
+                                                            <div class="rating__items">
+                                                                <input type="radio" name="rating" class="rating__item" value="1">
+                                                                <input type="radio" name="rating" class="rating__item" value="2">
+                                                                <input type="radio" name="rating" class="rating__item" value="3">
+                                                                <input type="radio" name="rating" class="rating__item" value="4">
+                                                                <input type="radio" name="rating" class="rating__item" value="5">
+                                                            </div>
+                                                        </div>
+                                                        <div class="rating__value">3.6</div>
+                                                        <div class="rating__info">12 отзывов</div>
+                                                    </div>
+                                                    <div class="product-card__footer">
+                                                        <div class="product-card__price">2 719 р.</div>
+                                                        <a href="" class="product-card__compare _icon-compare"></a>
+                                                        <a href="" class="product-card__favorite _icon-favorite"></a>
+                                                    </div>
+                                                    <button type="button" class="product-card__cart _btn">
+                                                        <span>В корзину</span>
+                                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                            <title>cart</title>
+                                                            <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                            <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                            <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                            </svg>
+                                                    </button>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="third-slider__slide slide-third">
+                                            <article class="product-card">
+                                                <a href="" class="product-card__image">
+                                                    <span class="product-card__item-image _ibg">
+                                                        <img src="../img/knife-fox.jpg" alt="">
+                                                    </span>
+                                                </a>
+                                                <div class="product-card__body">
+                                                    <h4 class="product-card__title">
+                                                        <a href="" class="product-card__link-title">Нож Лиса</a>
+                                                    </h4>
+                                                    <div class="product-card__info info-product-card">
+                                                        <div class="info-product-card__size">95х18</div>
+                                                        <div class="info-product-card__materials">Орех, Алюминий</div>
+                                                    </div>
+                                                    <div class="product-card__rating rating rating_set">
+                                                        <div class="rating__body">
+                                                            <div class="rating__active"></div>
+                                                            <div class="rating__items">
+                                                                <input type="radio" name="rating" class="rating__item" value="1">
+                                                                <input type="radio" name="rating" class="rating__item" value="2">
+                                                                <input type="radio" name="rating" class="rating__item" value="3">
+                                                                <input type="radio" name="rating" class="rating__item" value="4">
+                                                                <input type="radio" name="rating" class="rating__item" value="5">
+                                                            </div>
+                                                        </div>
+                                                        <div class="rating__value">3.6</div>
+                                                        <div class="rating__info">12 отзывов</div>
+                                                    </div>
+                                                    <div class="product-card__footer">
+                                                        <div class="product-card__price">2 719 р.</div>
+                                                        <a href="" class="product-card__compare _icon-compare"></a>
+                                                        <a href="" class="product-card__favorite _icon-favorite"></a>
+                                                    </div>
+                                                    <button type="button" class="product-card__cart _btn">
+                                                        <span>В корзину</span>
+                                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                            <title>cart</title>
+                                                            <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                            <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                            <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                            </svg>
+                                                    </button>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="third-slider__slide slide-third">
+                                            <article class="product-card">
+                                                <a href="" class="product-card__image">
+                                                    <span class="product-card__item-image _ibg">
+                                                        <img src="../img/knife-fox.jpg" alt="">
+                                                    </span>
+                                                </a>
+                                                <div class="product-card__body">
+                                                    <h4 class="product-card__title">
+                                                        <a href="" class="product-card__link-title">Нож Лиса</a>
+                                                    </h4>
+                                                    <div class="product-card__info info-product-card">
+                                                        <div class="info-product-card__size">95х18</div>
+                                                        <div class="info-product-card__materials">Орех, Алюминий</div>
+                                                    </div>
+                                                    <div class="product-card__rating rating rating_set">
+                                                        <div class="rating__body">
+                                                            <div class="rating__active"></div>
+                                                            <div class="rating__items">
+                                                                <input type="radio" name="rating" class="rating__item" value="1">
+                                                                <input type="radio" name="rating" class="rating__item" value="2">
+                                                                <input type="radio" name="rating" class="rating__item" value="3">
+                                                                <input type="radio" name="rating" class="rating__item" value="4">
+                                                                <input type="radio" name="rating" class="rating__item" value="5">
+                                                            </div>
+                                                        </div>
+                                                        <div class="rating__value">3.6</div>
+                                                        <div class="rating__info">12 отзывов</div>
+                                                    </div>
+                                                    <div class="product-card__footer">
+                                                        <div class="product-card__price">2 719 р.</div>
+                                                        <a href="" class="product-card__compare _icon-compare"></a>
+                                                        <a href="" class="product-card__favorite _icon-favorite"></a>
+                                                    </div>
+                                                    <button type="button" class="product-card__cart _btn">
+                                                        <span>В корзину</span>
+                                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                            <title>cart</title>
+                                                            <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                            <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                            <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                            </svg>
+                                                    </button>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="third-slider__dotts _dotts"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </section>
             <section class="page__sale-products sale-products sale-products_no-bottom">
-                @@include('html/products-slider.html', {
-                    "title": "Акции",
-                    "moretext": "Все акции"
-                })
+                <section class="products-slider">
+                    <div class="products-slider__container _container">
+                        <div class="products-slider__header">
+                            <h2 class="products-slider__title">Акции</h2>
+                            <a href="" class="products-slider__more _icon-arrow-bottom">Все акции</a>
+                        </div>
+                        <!-- Sliders -->
+                        <div class="products-slider__second second-slider">
+                            <div class="second-slider__body products-slider__body _swiper">
+                                <div class="second-slider__slide slide-second">
+                                    <article class="product-card">
+                                        <a href="" class="product-card__image">
+                                            <span class="product-card__item-image _ibg">
+                                                <img src="../img/knife-fox.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div class="product-card__body">
+                                            <h4 class="product-card__title">
+                                                <a href="" class="product-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="product-card__info info-product-card">
+                                                <div class="info-product-card__size">95х18</div>
+                                                <div class="info-product-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="product-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="product-card__price">2 719 р.</div>
+                                                <a href="" class="product-card__compare _icon-compare"></a>
+                                                <a href="" class="product-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="product-card__cart _btn">
+                                                <span>В корзину</span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                    <title>cart</title>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    </svg>   
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="second-slider__slide slide-second">
+                                    <article class="product-card">
+                                        <a href="" class="product-card__image">
+                                            <span class="product-card__item-image _ibg">
+                                                <img src="../img/knife-fox.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div class="product-card__body">
+                                            <h4 class="product-card__title">
+                                                <a href="" class="product-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="product-card__info info-product-card">
+                                                <div class="info-product-card__size">95х18</div>
+                                                <div class="info-product-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="product-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="product-card__price">2 719 р.</div>
+                                                <a href="" class="product-card__compare _icon-compare"></a>
+                                                <a href="" class="product-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="product-card__cart _btn">
+                                                <span>В корзину</span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                    <title>cart</title>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    </svg>   
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="second-slider__slide slide-second">
+                                    <article class="product-card">
+                                        <a href="" class="product-card__image">
+                                            <span class="product-card__item-image _ibg">
+                                                <img src="../img/knife-fox.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div class="product-card__body">
+                                            <h4 class="product-card__title">
+                                                <a href="" class="product-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="product-card__info info-product-card">
+                                                <div class="info-product-card__size">95х18</div>
+                                                <div class="info-product-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="product-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="product-card__price">2 719 р.</div>
+                                                <a href="" class="product-card__compare _icon-compare"></a>
+                                                <a href="" class="product-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="product-card__cart _btn">
+                                                <span>В корзину</span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                    <title>cart</title>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    </svg>   
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="second-slider__slide slide-second">
+                                    <article class="product-card">
+                                        <a href="" class="product-card__image">
+                                            <span class="product-card__item-image _ibg">
+                                                <img src="../img/knife-fox.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div class="product-card__body">
+                                            <h4 class="product-card__title">
+                                                <a href="" class="product-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="product-card__info info-product-card">
+                                                <div class="info-product-card__size">95х18</div>
+                                                <div class="info-product-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="product-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="product-card__price">2 719 р.</div>
+                                                <a href="" class="product-card__compare _icon-compare"></a>
+                                                <a href="" class="product-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="product-card__cart _btn">
+                                                <span>В корзину</span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                    <title>cart</title>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    </svg>   
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="second-slider__dotts _dotts"></div>
+                        </div>
+                    </div>
+                </section>
             </section>
             <section class="page__sale-products sale-products">
-                @@include('html/products-slider.html', {
-                    "title": "Акции",
-                    "moretext": "Все акции"
-                })
+                <section class="products-slider">
+                    <div class="products-slider__container _container">
+                        <div class="products-slider__header">
+                            <h2 class="products-slider__title">Акции</h2>
+                            <a href="" class="products-slider__more _icon-arrow-bottom">Все акции</a>
+                        </div>
+                        <!-- Sliders -->
+                        <div class="products-slider__second second-slider">
+                            <div class="second-slider__body products-slider__body _swiper">
+                                <div class="second-slider__slide slide-second">
+                                    <article class="product-card">
+                                        <a href="" class="product-card__image">
+                                            <span class="product-card__item-image _ibg">
+                                                <img src="../img/knife-fox.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div class="product-card__body">
+                                            <h4 class="product-card__title">
+                                                <a href="" class="product-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="product-card__info info-product-card">
+                                                <div class="info-product-card__size">95х18</div>
+                                                <div class="info-product-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="product-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="product-card__price">2 719 р.</div>
+                                                <a href="" class="product-card__compare _icon-compare"></a>
+                                                <a href="" class="product-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="product-card__cart _btn">
+                                                <span>В корзину</span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                    <title>cart</title>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    </svg>   
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="second-slider__slide slide-second">
+                                    <article class="product-card">
+                                        <a href="" class="product-card__image">
+                                            <span class="product-card__item-image _ibg">
+                                                <img src="../img/knife-fox.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div class="product-card__body">
+                                            <h4 class="product-card__title">
+                                                <a href="" class="product-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="product-card__info info-product-card">
+                                                <div class="info-product-card__size">95х18</div>
+                                                <div class="info-product-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="product-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="product-card__price">2 719 р.</div>
+                                                <a href="" class="product-card__compare _icon-compare"></a>
+                                                <a href="" class="product-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="product-card__cart _btn">
+                                                <span>В корзину</span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                    <title>cart</title>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    </svg>   
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="second-slider__slide slide-second">
+                                    <article class="product-card">
+                                        <a href="" class="product-card__image">
+                                            <span class="product-card__item-image _ibg">
+                                                <img src="../img/knife-fox.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div class="product-card__body">
+                                            <h4 class="product-card__title">
+                                                <a href="" class="product-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="product-card__info info-product-card">
+                                                <div class="info-product-card__size">95х18</div>
+                                                <div class="info-product-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="product-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="product-card__price">2 719 р.</div>
+                                                <a href="" class="product-card__compare _icon-compare"></a>
+                                                <a href="" class="product-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="product-card__cart _btn">
+                                                <span>В корзину</span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                    <title>cart</title>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    </svg>   
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="second-slider__slide slide-second">
+                                    <article class="product-card">
+                                        <a href="" class="product-card__image">
+                                            <span class="product-card__item-image _ibg">
+                                                <img src="../img/knife-fox.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div class="product-card__body">
+                                            <h4 class="product-card__title">
+                                                <a href="" class="product-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="product-card__info info-product-card">
+                                                <div class="info-product-card__size">95х18</div>
+                                                <div class="info-product-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="product-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="product-card__price">2 719 р.</div>
+                                                <a href="" class="product-card__compare _icon-compare"></a>
+                                                <a href="" class="product-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="product-card__cart _btn">
+                                                <span>В корзину</span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                    <title>cart</title>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    </svg>   
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="second-slider__dotts _dotts"></div>
+                        </div>
+                    </div>
+                </section>
             </section>
             <section class="page__articles-module articles-module">
                 <div class="articles-module__container _container">
@@ -655,10 +1937,204 @@
                 </div>
             </section>
             <section class="page__hits-products hits-products">
-                @@include('html/products-slider.html', {
-                    "title": "Фонари",
-                    "moretext": "Перейти в каталог"
-                })
+                <section class="products-slider">
+                    <div class="products-slider__container _container">
+                        <div class="products-slider__header">
+                            <h2 class="products-slider__title">Фонари</h2>
+                            <a href="" class="products-slider__more _icon-arrow-bottom">Перейти в каталог</a>
+                        </div>
+                        <!-- Sliders -->
+                        <div class="products-slider__second second-slider">
+                            <div class="second-slider__body products-slider__body _swiper">
+                                <div class="second-slider__slide slide-second">
+                                    <article class="product-card">
+                                        <a href="" class="product-card__image">
+                                            <span class="product-card__item-image _ibg">
+                                                <img src="../img/knife-fox.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div class="product-card__body">
+                                            <h4 class="product-card__title">
+                                                <a href="" class="product-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="product-card__info info-product-card">
+                                                <div class="info-product-card__size">95х18</div>
+                                                <div class="info-product-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="product-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="product-card__price">2 719 р.</div>
+                                                <a href="" class="product-card__compare _icon-compare"></a>
+                                                <a href="" class="product-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="product-card__cart _btn">
+                                                <span>В корзину</span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                    <title>cart</title>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    </svg>   
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="second-slider__slide slide-second">
+                                    <article class="product-card">
+                                        <a href="" class="product-card__image">
+                                            <span class="product-card__item-image _ibg">
+                                                <img src="../img/knife-fox.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div class="product-card__body">
+                                            <h4 class="product-card__title">
+                                                <a href="" class="product-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="product-card__info info-product-card">
+                                                <div class="info-product-card__size">95х18</div>
+                                                <div class="info-product-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="product-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="product-card__price">2 719 р.</div>
+                                                <a href="" class="product-card__compare _icon-compare"></a>
+                                                <a href="" class="product-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="product-card__cart _btn">
+                                                <span>В корзину</span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                    <title>cart</title>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    </svg>   
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="second-slider__slide slide-second">
+                                    <article class="product-card">
+                                        <a href="" class="product-card__image">
+                                            <span class="product-card__item-image _ibg">
+                                                <img src="../img/knife-fox.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div class="product-card__body">
+                                            <h4 class="product-card__title">
+                                                <a href="" class="product-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="product-card__info info-product-card">
+                                                <div class="info-product-card__size">95х18</div>
+                                                <div class="info-product-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="product-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="product-card__price">2 719 р.</div>
+                                                <a href="" class="product-card__compare _icon-compare"></a>
+                                                <a href="" class="product-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="product-card__cart _btn">
+                                                <span>В корзину</span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                    <title>cart</title>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    </svg>   
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="second-slider__slide slide-second">
+                                    <article class="product-card">
+                                        <a href="" class="product-card__image">
+                                            <span class="product-card__item-image _ibg">
+                                                <img src="../img/knife-fox.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div class="product-card__body">
+                                            <h4 class="product-card__title">
+                                                <a href="" class="product-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="product-card__info info-product-card">
+                                                <div class="info-product-card__size">95х18</div>
+                                                <div class="info-product-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="product-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="product-card__price">2 719 р.</div>
+                                                <a href="" class="product-card__compare _icon-compare"></a>
+                                                <a href="" class="product-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="product-card__cart _btn">
+                                                <span>В корзину</span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
+                                                    <title>cart</title>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M6.711 7.312h21.254c0.614 0 1.064 0.579 0.912 1.174l-1.789 6.997c-0.32 1.25-1.446 2.124-2.736 2.124h-15.857M0 1.411h4.378c0.925 0 1.713 0.673 1.859 1.587l2.842 17.855c0.145 0.914 0.934 1.586 1.859 1.586h15.606"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M14.841 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4118" stroke="#000" d="M27.055 28.485c0 1.226-0.951 2.174-2.070 2.174s-2.070-0.949-2.070-2.174 0.951-2.174 2.070-2.174c1.119 0 2.070 0.949 2.070 2.174z"></path>
+                                                    </svg>   
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="second-slider__dotts _dotts"></div>
+                        </div>
+                    </div>
+                </section>
             </section>
         </main>
 
